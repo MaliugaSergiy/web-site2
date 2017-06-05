@@ -1,0 +1,206 @@
+//@media screen and (max-width:1000px)
+header {
+    height: 80px;
+    z-index: 2;
+    background-color: rgba(201, 122, 65, 0.53);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: -80px;
+    transition: top 0.3s ease-in-out;
+    .wr {
+//        display: none;
+        .swipe {
+            .swipe-menu {
+                ul {
+                    li {
+                        a {
+                            .icon-menu {
+                                span {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#start {
+    //margin-bottom: 500px;
+    //background: transparent;
+    //background: url(../img/bg_start_big_overlay.jpg);
+    //background-position:  center;
+    //background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    .wr {
+        position: relative;
+        height: 100%;
+        .containerr {
+            color: $white;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            right: 10px;
+            transform: translateY(-50%);
+            max-width: 730px;
+            border-top: 5px solid $coral;
+            border-right: 5px solid $coral;
+            padding: 40px 10px;
+            transition: border-right 0.3s 0.4s, border-top 0.3s 0.7s;
+            &:after {  
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 5px;
+                background-color: $coral;
+                bottom: 0;
+                right: 0;
+                transition: background-color 0.3s 0.1s, box-shadow 0.3s;
+//                z-index: 9;
+            }
+            .name {
+                
+                font-weight: 500;
+                .row1 {
+                    letter-spacing: 4px;
+                    font-size: 64px;
+                }
+                .row2 {
+                    font-size: 62px;
+                    letter-spacing: 3px;
+                    margin-bottom: 4vh;
+                    span {
+                        color: $orange;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+            
+            p{
+                font-weight: 500;
+                letter-spacing: 1px;
+                &:first-of-type {
+                    font-size: 25px;
+                    
+                    span {
+                        color: $orange;
+                        text-transform: uppercase;
+                    }
+                    b {
+                        font-size: 36px;
+                    }
+                }
+                &:last-of-type {
+                    font-size: 20px;
+                }
+            }
+
+            button {
+                background-color: $coral;
+                border: none;
+                border-bottom: 2px solid $orange;
+                padding: 16px 22px;
+                position: absolute;
+                text-transform: uppercase;
+                cursor: pointer;
+                left: 50%;
+                bottom: -27px;
+                transform: translateX(-50%);
+                z-index: 2;
+                font-size: 20px;
+                min-width:  500px;
+                transition: 0.3s;
+                &:hover {
+                    background-color: lighten( $coral, 15%);
+                    border-bottom-color: lighten( $orange, 15%);
+                    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+                    }
+            }
+        }
+        .hoverButton {
+            border-top: 5px solid lighten( $coral, 15%);
+            border-right: 5px solid lighten( $coral, 15%);
+            &:after {
+                background-color: lighten( $coral, 15%);
+                box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+            }
+        }
+    }
+    .icon-Arrows {
+        position: absolute; 
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: contrast(50%);
+        transition: 0.3s;
+        animation: arrow .8s both ease-in-out infinite alternate;
+        z-index: 5;
+        
+        &:hover {
+            filter: contrast(100%);
+            
+        }
+}
+}
+
+@media screen and (max-width:765px) {
+    #start {
+
+        .wr {
+            
+            .containerr {
+                top: 5vh;
+                bottom: 8vh;
+                transform: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &:after {  
+
+                }
+                .name {
+
+                    .row1 {
+                        font-size: 8vw;
+                    }
+                    .row2 {
+                        font-size: 7.8vw;
+                        span {
+
+                        }
+                    }
+                }
+
+                p{
+                    margin: 1vh 0;
+                    &:first-of-type {
+                        font-size: 4.1vw;
+                        b {
+                            font-size: 5vw;
+                        }
+                    }
+                    &:last-of-type {
+                        font-size: 3.6vw;
+                    }
+                }
+
+                button {
+                    font-size: 3vw;
+                    //padding: 1.5vh;
+                    //bottom: -4vh;
+                    min-width: 85%;
+                }
+            }
+        }
+        .icon-Arrows {
+            left: 92%;
+        }
+    }
+}
+
+
+#underStart {
+    height: 200px;
+}
