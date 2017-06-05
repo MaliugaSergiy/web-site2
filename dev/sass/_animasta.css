@@ -63,7 +63,22 @@
 } 
 /*--------------------*/
 
-
+@keyframes roll {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(405deg);
+    }
+}
+@keyframes roll2 {
+    0% {
+        transform: translateY(-50%) rotate(0);
+    }
+    100% {
+        transform: translateY(-50%) rotate(-360deg);
+    }
+}
 
 
 

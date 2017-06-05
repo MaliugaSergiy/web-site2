@@ -1,7 +1,9 @@
 //var $ = require("jquery");
 
 
-
+    $("a").on("click",function(e){
+        e.preventDefault();
+    })
 
     // init nav menu
     $(document).ready(function () {
@@ -43,11 +45,11 @@
     });
     
     // header appearing after start-section is scrolled
-    if ($(window).scrollTop() + 5 > $("#underStart").offset().top) {
+    if ($(window).scrollTop() + 200 > $("#underStart").offset().top) {
         $("header").css("top", "0");
     }
     $(window).on("scroll", function () {
-        if($("#underStart").offset().top - $(window).scrollTop() - 5 < 0) {
+        if($("#underStart").offset().top - $(window).scrollTop() - 200 < 0) {
                 $("header").css("top", "0");
            } else  {
                $("header").css("top", "");

@@ -9,7 +9,7 @@ header {
     top: -80px;
     transition: top 0.3s ease-in-out;
     .wr {
-//        display: none;
+        //        display: none;
         .swipe {
             .swipe-menu {
                 ul {
@@ -26,7 +26,7 @@ header {
     }
 }
 
-#start {
+#start,#request {
     //margin-bottom: 500px;
     //background: transparent;
     //background: url(../img/bg_start_big_overlay.jpg);
@@ -49,7 +49,7 @@ header {
             border-right: 5px solid $coral;
             padding: 40px 10px;
             transition: border-right 0.3s 0.4s, border-top 0.3s 0.7s;
-            &:after {  
+            &:after {
                 content: "";
                 position: absolute;
                 width: 50%;
@@ -58,10 +58,9 @@ header {
                 bottom: 0;
                 right: 0;
                 transition: background-color 0.3s 0.1s, box-shadow 0.3s;
-//                z-index: 9;
+                //                z-index: 9;
             }
             .name {
-                
                 font-weight: 500;
                 .row1 {
                     letter-spacing: 4px;
@@ -77,13 +76,11 @@ header {
                     }
                 }
             }
-            
-            p{
+            p {
                 font-weight: 500;
                 letter-spacing: 1px;
                 &:first-of-type {
                     font-size: 25px;
-                    
                     span {
                         color: $orange;
                         text-transform: uppercase;
@@ -96,7 +93,6 @@ header {
                     font-size: 20px;
                 }
             }
-
             button {
                 background-color: $coral;
                 border: none;
@@ -110,13 +106,13 @@ header {
                 transform: translateX(-50%);
                 z-index: 2;
                 font-size: 20px;
-                min-width:  500px;
+                min-width: 500px;
                 transition: 0.3s;
                 &:hover {
                     background-color: lighten( $coral, 15%);
                     border-bottom-color: lighten( $orange, 15%);
-                    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
-                    }
+                    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+                }
             }
         }
         .hoverButton {
@@ -124,12 +120,12 @@ header {
             border-right: 5px solid lighten( $coral, 15%);
             &:after {
                 background-color: lighten( $coral, 15%);
-                box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+                box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
             }
         }
     }
     .icon-Arrows {
-        position: absolute; 
+        position: absolute;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
@@ -137,19 +133,15 @@ header {
         transition: 0.3s;
         animation: arrow .8s both ease-in-out infinite alternate;
         z-index: 5;
-        
         &:hover {
             filter: contrast(100%);
-            
         }
-}
+    }
 }
 
 @media screen and (max-width:765px) {
     #start {
-
         .wr {
-            
             .containerr {
                 top: 5vh;
                 bottom: 8vh;
@@ -157,23 +149,17 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                &:after {  
-
-                }
+                &:after {}
                 .name {
-
                     .row1 {
                         font-size: 8vw;
                     }
                     .row2 {
                         font-size: 7.8vw;
-                        span {
-
-                        }
+                        span {}
                     }
                 }
-
-                p{
+                p {
                     margin: 1vh 0;
                     &:first-of-type {
                         font-size: 4.1vw;
@@ -185,7 +171,6 @@ header {
                         font-size: 3.6vw;
                     }
                 }
-
                 button {
                     font-size: 3vw;
                     //padding: 1.5vh;
@@ -200,7 +185,196 @@ header {
     }
 }
 
-
 #underStart {
-    height: 200px;
+    //    height: 250px;
+    border-bottom: 1px solid $orange;
+    background: url(../img/bg_1upd.png);
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px 10px;
+    .wr {
+        max-width: 930px;
+        .name {
+            color: $coral;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .undrname {
+            font-size: 24px;
+            color: $darkBlue;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .descr {
+            font-size: 24px;
+            color: $darkBlue;
+            letter-spacing: 0.9px;
+            margin: 0;
+            span {
+                font-weight: bold;
+                color: $coral;
+            }
+        }
+    }
+}
+
+#price {
+    //    margin-bottom: 1000px;
+    padding-bottom: 30px;
+    .wr {
+        padding: 40px 10px;
+        .head_name {
+            text-align: center;
+            max-width: 450px;
+            letter-spacing: 1.5px;
+            color: $darkBlue;
+            margin: auto;
+            font-weight: bold;
+            line-height: 1.5;
+            span {
+                color: $coral
+            }
+        }
+        .flex_container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .fl_item {
+                margin: 70px 10px 0;
+                flex: 1;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                .ico {
+                    display: block;
+                    margin: 30px auto;
+                    position: relative;
+                    .ico_img {
+                        margin: auto;
+                        position: relative;
+                        z-index: 3;
+                    }
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    &:before {
+                        z-index: 2;
+                        background-color: $darkBlue;
+                        border-radius: 5px;
+                        width: 130px;
+                        height: 130px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        animation: roll 5s infinite;
+                    }
+                    &:after {
+                        z-index: 1;
+                        border: 2px solid $orange;
+                        width: 110px;
+                        height: 110px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        //animation: roll2 5s infinite;
+                    }
+                }
+                .head_name_it {
+                    margin-top: 30px;
+                    color: $darkBlue;
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                .descr {
+                    color: $darkBlue;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    flex: 1;
+                }
+                .price {
+                    color: $coral;
+                    font-weight: bold;
+                    font-size: 18px;
+                    span {
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:870px) {
+    #price {
+        .wr {
+            .flex_container {
+                .fl_item {
+                    flex-basis: 45%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    #price {
+        .wr {
+            .flex_container {
+                .fl_item {
+                    flex-basis: 100%;
+                    border-bottom: 2px solid $coral;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.band {
+    background-color: $darkBlue;
+    margin-bottom: 50px;
+    .wr {
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //        padding: 15px 0;
+        flex-wrap: wrap;
+        .fl_item {
+            margin: 15px auto;
+            text-align: center;
+        }
+        .name {
+            color: $white;
+        }
+        .addRequest {
+            @extend %coralButton;
+            color: $white;
+        }
+    }
+}
+
+#request {
+    margin-bottom: 500px;
+    .wr {
+        .containerr {
+            .name {
+                .row2.r1 {
+                    line-height: 1.5;
+                    margin-bottom: 15px;
+                }
+                .row2.r3 {
+                    color: $orangeP;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
