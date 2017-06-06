@@ -1,6 +1,6 @@
 //@media screen and (max-width:1000px)
 header {
-    height: 80px;
+    height: 60px;
     z-index: 2;
     background-color: rgba(201, 122, 65, 0.53);
     position: fixed;
@@ -140,7 +140,7 @@ header {
 }
 
 @media screen and (max-width:765px) {
-    #start {
+    #start, #request {
         .wr {
             .containerr {
                 top: 5vh;
@@ -180,7 +180,7 @@ header {
             }
         }
         .icon-Arrows {
-            left: 92%;
+            left: 2%;
         }
     }
 }
@@ -328,7 +328,7 @@ header {
             .flex_container {
                 .fl_item {
                     flex-basis: 100%;
-                    border-bottom: 2px solid $coral;
+                    border-bottom: 2px solid $orange;
                     padding-bottom: 10px;
                 }
             }
@@ -361,6 +361,9 @@ header {
 }
 
 #request {
+    background: url(../img/bg_10_1.jpg);
+    background-position:  center;
+    background-attachment: fixed;
     margin-bottom: 500px;
     .wr {
         .containerr {
